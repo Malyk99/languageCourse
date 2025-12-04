@@ -28,14 +28,15 @@ DEFAULT_LESSON_FILE = TXT_INPUT_DIR / "text1.txt"
 # Audio / TTS Settings
 # ─────────────────────────────────────────────
 ###voices = [
-#    "alloy", "echo"(M), "fable"(B), "onyx"(M), "nova"(Good), "shimmer",
-#    "coral", "verse", "ballad", "ash", "sage", "marin", "cedar"
+#    "alloy", "echo"(M=samu), "fable"(B), "onyx"(M), "nova"(Good), "shimmer",
+#    "coral"(Very precise), "verse", "ballad"(Brit enthusiastic), "ash", "sage", "marin", "cedar"
 #]
 DEFAULT_TTS_MODEL = "gpt-4o-mini-tts"
-DEFAULT_TTS_VOICE = "onyx"
+DEFAULT_TTS_VOICE = "verse"
 
 # Silence between joined phrases (ms)
-SILENCE_BETWEEN_PHRASES_MS = 3500
+SILENCE_BETWEEN_PHRASES_MS = 4500
+SILENCE_SPANISH_SECTION_MS = 2200     # silence between ¿¿ phrases
 
 # Slow audio factor (0.85 = 15% slower)
-SLOW_FACTOR = 0.85
+SLOW_FACTOR = 0.90

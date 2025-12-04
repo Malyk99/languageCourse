@@ -36,7 +36,8 @@ class TTSEngine:
             response = self.client.audio.speech.create(
                 model=self.model,
                 voice=chosen_voice,
-                input=text
+                input=text,
+                #instructions="Speak clearly and naturally.",
             )
 
             audio_bytes = response.read()
